@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+<hr>
+<div>
+<div class="About" style="display: flex;align-items: center;gap: 50px;width: 1300px;margin: 50px auto;">
+
+    <div class="foto">
+        <img src="c:\Users\Lenovo\Downloads\image2.png" alt="Foto Profil">
+    </div>
+
+    <div class="text">
+        <h1 style="color: rgb(47, 23, 7);font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 35px;margin: 0;">About Me...</h1>
+        <h2 style="color: rgb(96, 45, 11);font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-size: 25px;margin: 10px 0;">Get to know me better</h2>
+        <p style="font-family:Arial, Helvetica, sans-serif;font-size:25px;text-align: justify;line-height: 1.5;margin: 50px;margin-left: 0px;margin-top: 0;">
+           Hey there!  I'm <b>Ahmad Hanif</b>. Coffee , code , repeat. Currently surviving the world of HTML, CSS, and JavaScript while chasing my dream of becoming a web developer. Still learning, still making mistakes, but that's part of the journey. 
+        </p>
+        <button>more...</button>
+    </div>
+
+</div>
+<hr>
+<div style=" width:1300px; margin:50px auto; align-items:flex-start;">
+
+    <!-- KOLOM KIRI -->
+    <div style="width:50%; display:flex; gap:10px;">
+
+    <div>
+
+        <div class="foto">
+            <img src="c:\Users\Lenovo\Downloads\path8.png" width= "40px">
+
+            <h1 style="color:rgb(96,45,11);">Data Diri</h1> 
+        </div>
+
+            <table style="border-spacing:0 8px;">
+                <tr>
+                    <td><b>Full Name</b></td>
+                    <td>:</td>
+                    <td>Ahmad Hanif Abqari</td>
+                </tr>
+
+                <tr>
+                    <td><b>Nickname</b></td>
+                    <td>:</td>
+                    <td>Hanif</td>
+                </tr>
+
+                <tr>
+                    <td><b>Age</b></td>
+                    <td>:</td>
+                    <td>20 Years Old</td>
+                </tr>
+            
+                <tr>
+                    <td><b>Date Of Birth</b></td>
+                    <td>:</td>
+                    <td>May 1, 2006</td>
+                </tr>
+
+                <tr>
+                    <td><b>Gender</b></td>
+                    <td>:</td>
+                    <td>Male</td>
+                </tr>
+
+                <tr>
+                    <td><b>Nationality</b></td>
+                    <td>:</td>
+                    <td>Indonesian</td>
+                </tr>
+        
+                 <tr>
+                    <td><b>Addres</b></td>
+                    <td>:</td>
+                    <td>Blitar, East</td>
+                </tr>
+
+                 <tr>
+                    <td><b>Nationality</b></td>
+                    <td>:</td>
+                    <td>Indonesian</td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+    <hr>
+
+    <!-- KOLOM KANAN -->
+    <div>
+
+        <div class="foto">
+            <img src="c:\Users\Lenovo\Desktop\path2.png"width= 40px>
+    
+            <h1 style="color:rgb(96,45,11);">Education & Experience</h1>
+        </div>
+
+        <div>
+
+            <table style="border-spacing:0 8px;">
+
+                <tr>
+                    <td><b>2013–2019</b></td>
+                    <td>:</td>
+                    <td>SDI Kreatif Zaid Bin Tsabit (6 Years)</td>
+                </tr>
+
+                <tr>
+                    <td><b>2019–2022</b></td>
+                    <td>:</td>
+                    <td>MSW – Imam Syafii Tulungagung (3 Years)</td>
+                </tr>
+
+                <tr>
+                    <td><b>2022–2025</b></td>
+                    <td>:</td>
+                    <td>MSU – Imam Syafii Tulungagung (3 Years)</td>
+                </tr>
+
+                <tr>
+                    <td><b>2025–2026</b></td>
+                    <td>:</td>
+                    <td>Media Team Service – Imam Syafii Tulungagung (1 Year)</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+<hr>
+ <div style="margin-left: 100px;">
+
+        <div class="foto">
+            <img src="c:\Users\Lenovo\Desktop\path3.png"width= 40px>
+    
+            <h1 style="color:rgb(96,45,11);">Social media</h1>
+        </div>
+
+        <div>
+            <h3>Social Media</h3>
+
+<p >
+    Instagram :
+    <a href="https://www.instagram.com/srrstai/" target="_blank">
+        @srrstai
+    </a>
+</p>
+
+<p>
+    GitHub :
+    <a href="https://github.com/Ahmdhnf-creator/Belajar-git" target="_blank">
+        Ahmdhnf
+    </a>
+</p>
+
+        </div>
+
+    </div>
+    <button style="color: rgb(22, 1, 43);margin-left: 100px;">Contact person</button>
+
+    
+</body>
+</html>
