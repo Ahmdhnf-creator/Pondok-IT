@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pondok IT Indonesia | Belajar IT Berbasis Pesantren</title>
+
+<meta name="description" content="Website Profil Pondok IT Indonesia">
+<meta name="keywords" content="Pondok IT, Programmer, Backend, Frontend">
+
+</head>
+
+<style>
+header{
+margin:0;
+padding:0;
+box-sizing:border-box;
+position: fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items: center;
+padding:25px 8%;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(10px);
+box-shadow:0 4px 20px rgba(0,0,0,.08);
+z-index:999;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.logo img{
+    width:70px;
+    height:auto;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.logo-text h2{
+    margin:0;
+    font-size:28px;
+    color:#04203fff;
+    font-weight:700;
+    line-height:1.2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-text p{
+    margin-top:5px;
+    font-size:14px;
+    color:#c59237ff;
+    font-weight:400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:22px;
+font-weight:700;
+color:#2563eb;  
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#1e293b;
+font-weight:600;
+transition:.3s;
+}
+
+section{
+padding:80px 8%;
+max-width:1200px;
+margin-top: 100px;
+}
+
+.hero h1{
+font-size: 100px;
+text-align: center;
+}
+
+.hero p{
+width: 800px;
+text-align: center;
+margin-left: 200px;
+font-size: 25px;
+}
+
+.description h1{
+text-align: center;
+font-size: 45px;
+}
+
+.programstudi{
+text-align: center;
+font-size: 25px;
+}
+
+.grid2{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.description grid img{
+align-items: center;
+}
+
+.Persyaratan h1{
+text-align: center;
+font-size: 50px;
+}
+
+.Persyaratan ol{
+margin-left: 50%;
+}
+</style>
+
+<body>
+
+
+<header>
+    
+<div class="logo">
+
+    <img src="image/g120.png" alt="Logo Pondok IT">
+
+    <div class="logo-text">
+        <h2>Pondok IT Indonesia</h2>
+        <p>Belajar IT • Berkarya • Berakhlak</p>
+    </div>
+
+</div>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#Tentang">Tentang</a>
+        <a href="#Program">Program</a>
+        <a href="#persyaratan">Persyaratan</a>
+        <a href="#Media">Media</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+
+    <div>
+
+        <h1>Belajar IT, Berkarya & Berakhlak</h1>
+
+        <p>
+            Pondok IT merupakan lembaga pendidikan berbasis pesantren
+            yang memadukan pembelajaran teknologi informasi dengan
+            pembentukan karakter Islami. Belajar langsung melalui
+            praktik sehingga siap menghadapi dunia kerja maupun
+            membangun bisnis digital sendiri.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="description" id="Tentang">
+
+    <h1>Tentang Pondok IT</h1>
+
+    <div class="grid">
+
+        <div>
+            <img src="image/image1-8.png"
+                 alt="Suasana Pondok IT"
+                 style="border-radius:5px;">
+        </div>
+
+        <div>
+
+            <p>
+                Pondok IT adalah lembaga pendidikan yang berfokus pada
+                pengembangan keterampilan di bidang teknologi informasi
+                dengan konsep pesantren. Santri tidak hanya mempelajari
+                pemrograman, tetapi juga dibimbing untuk memiliki akhlak,
+                kedisiplinan, dan tanggung jawab dalam setiap aktivitas.
+            </p>
+
+            <br>
+
+            <p>
+                Materi pembelajaran disusun berdasarkan kebutuhan dunia
+                industri. Peserta mendapatkan pengalaman melalui praktik,
+                pembuatan proyek nyata, serta pendampingan mentor sehingga
+                mampu menguasai berbagai teknologi yang banyak digunakan
+                oleh perusahaan saat ini.
+            </p>
+
+            <br>
+
+            <p>
+                Dengan lingkungan belajar yang nyaman dan kurikulum yang
+                terus mengikuti perkembangan teknologi, Pondok IT menjadi
+                pilihan tepat bagi generasi muda yang ingin mengembangkan
+                kemampuan digital tanpa meninggalkan nilai-nilai keislaman.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="programstudi" id="Program">
+
+    <h1>Program Study</h1>
+
+    
+    <div class="grid2">
+
+        <div class="card">
+            <h3> Backend Developer</h3>
+            <p>Mempelajari PHP, Laravel, MySQL, REST API, serta pengelolaan database untuk membangun sistem yang kuat.</p>
+        </div>
+
+        <div class="card">
+            <h3> Frontend Developer</h3>
+            <p>Belajar HTML, CSS, JavaScript, dan React untuk membuat antarmuka website yang modern dan responsif.</p>
+        </div>
+
+        <div class="card">
+            <h3> Mobile Developer</h3>
+            <p>Mengembangkan aplikasi Android menggunakan React Native dengan pendekatan project based learning.</p>
+        </div>
+
+        <div class="card">
+            <h3> Digital Business</h3>
+            <p>Mempelajari Digital Marketing, Content Creator, dan Desain Grafis untuk membangun bisnis digital.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="Persyaratan" id="Persyaratan">
+
+    <h1>Persyaratan Masuk</h1>
+
+    
+    <ol style="max-width:700px;margin:auto;line-height:2;">
+        <li>Lulusan SMA/SMK atau sederajat.</li>
+        <li>Memiliki minat di bidang Teknologi Informasi.</li>
+        <li>Siap mengikuti seluruh kegiatan pembelajaran.</li>
+        <li>Mendapat izin dari orang tua atau wali.</li>
+        <li>Berkomitmen menjaga disiplin dan akhlak.</li>
+    </ol>
+
+</section>
+
+<section id="galeri">
+
+    <h2>Galeri Pondok IT</h2>
+
+    <p style="text-align:left;max-width:700px;margin-left: 0%;">
+        Dokumentasi suasana belajar dan kegiatan santri Pondok IT.
+        Pembelajaran dilakukan secara praktik sehingga peserta memperoleh
+        pengalaman nyata dalam mengembangkan keterampilan di bidang teknologi.
+    </p>
+
+    <div class="gallery">
+
+        <img src="image/image1-61.png" alt="Suasana Belajar">
+
+    </div>
+
+    
+    <div class="video">
+
+        <video controls>
+
+            <source src="video/What's Inside Alexandria Islamic School_ (Facilities).mp4" alt="Suasana belajar">
+
+        </video>
+
+    </div>
+
+    
+    <div class="audio">
+
+    <audio controls>
+    <source src="audio/Feel-Good Event Backsound🎉 Funky Guitars & Energetic Rhythm for Brand Launches & Parties NoCopyright - (320 Kbps).mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio.
+    </audio>
+
+    </div>
+
+</section>
+
+</body>
+</html>
