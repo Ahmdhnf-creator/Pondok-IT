@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran Santri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+}
+
+.container{
+    width: 500px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    color: #333;
+}
+
+.container h1{
+text-align: center;
+}
+
+p{
+    text-align: center;
+    color: gray;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+select,
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea{
+    resize: vertical;
+}
+
+input[type=file]{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.button{
+    text-align: center;
+}
+
+button{
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #26734d;
+}
+
+.reset{
+    background-color: #d9534f;
+}
+
+.reset:hover{
+    background-color: #c9302c;
+}
+</style>
+
+<body>
+
+<div class="container">
+
+    <img src="image/g120.png" width="90" class="logo">
+
+    <h2>Formulir Pendaftaran Santri</h2>
+    <h1>Pondok IT</h1>
+
+    <p>Silakan isi data diri dengan lengkap.</p>
+
+    <form>
+
+        <label>Nama Lengkap</label>
+        <input type="text" placeholder="Masukkan nama lengkap">
+
+        <label>Tempat Lahir</label>
+        <input type="text" placeholder="Masukkan tempat lahir">
+
+        <label>Tanggal Lahir</label>
+        <input type="date">
+
+        <label>Jenis Kelamin</label><br><br>
+
+        <input type="radio" name="jk"> Laki-laki
+        <input type="radio" name="jk"> Perempuan
+
+        <br><br>
+
+        <label>Alamat</label>
+        <textarea rows="4" placeholder="Masukkan alamat"></textarea>
+
+        <label>No. HP</label>
+        <input type="tel" placeholder="08xxxxxxxxxx">
+
+        <label>Email</label>
+        <input type="email" placeholder="email@gmail.com">
+
+        <label>Pendidikan Terakhir</label>
+        <select>
+            <option>-- Pilih Pendidikan --</option>
+            <option>SMP</option>
+            <option>SMA/SMK</option>
+            <option>D3</option>
+            <option>S1</option>
+        </select>
+
+        <label>Program yang Diminati</label><br><br>
+
+        <input type="checkbox"> Web Development <br>
+        <input type="checkbox"> Mobile Development <br>
+        <input type="checkbox"> Cyber Security
+
+        <br><br>
+
+        <label>Upload Foto</label>
+        <input type="file">
+
+        <div class="button">
+            <button type="submit">Daftar</button>
+            <button type="reset" class="reset">Reset</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>
