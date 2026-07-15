@@ -1,0 +1,114 @@
+
+    body {
+      margin: 0px;
+      padding: 40px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .Home {
+      margin-bottom: 60px;
+
+    }
+    .page1 {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 60px;
+    }
+    .profil img {
+      margin-left: 50px;
+      border-radius: 50px;
+      width: 250px;
+    }
+    .textprofil {
+    }
+    .textprofil h2 {
+      font-size: 35px;
+      margin-top: 0;
+    }
+    .textprofil p {
+      font-size: 20px;
+      max-width: 1000px;
+      line-height: 30px;
+    }
+    .hobby h2 {
+      margin-left: 20px;
+      margin-bottom: 25px;
+    }
+    .hobby {
+      padding: 0px 0px;
+      margin-left: 30px;
+    }
+    .hobby li {
+      line-height: 35px;
+    }
+    .hobyskill {
+      display: flex;
+      background-color: rgb(70, 34, 0);
+      padding: 30px;
+      gap: 40px;
+      color: aliceblue;
+      align-items: flex-start;
+      width: 85%;
+      margin: auto;
+      border-radius: 20px;
+    }
+    .skill {
+      padding: 0px 20px;
+      text-align: left;
+      margin-left: auto;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td,
+    td {
+      padding: 10px 0px;
+      text-align: left;
+    }
+    .head {
+      margin-left: auto;
+    }
+    .form {
+      width: 300px;
+      margin-top: 0;
+      padding: 0px 0px 0px 0px;
+      margin-left: auto;
+    }
+
+    .form h2 {
+      margin-bottom: 20px;
+    }
+
+    .form label {
+      font-weight: bold;
+    }
+
+    .form input,
+    .form textarea {
+      width: 80%;
+      padding: 8px;
+      margin-top: 0px;
+      border: 1px solid #999;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .form textarea {
+      resize: none;
+    }
+
+    .form button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #5c3200;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form button:hover {
+      background-color: #774000;
+    }
