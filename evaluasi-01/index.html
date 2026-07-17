@@ -1,481 +1,427 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenten.studio</title>
+  </head>
 
-<style>
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+    header {
+      width: 100%;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      box-sizing: border-box;
+    }
 
-header{
-    width: 100%;
-    padding: 18px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    box-sizing: border-box;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
 
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
+    .logo img {
+      width: 60px;
+    }
 
-.logo img{
-    width: 60px;
-}
+    .logo h1 {
+      font-size: 32px;
+      color: #222;
+      font-weight: bold;
+    }
 
-.logo h1{
-    font-size: 32px;
-    color: #222;
-    font-weight: bold;
-}
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
 
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 17px;
+      font-weight: 500;
+      transition: 0.3s;
+      color: #320089;
+      list-style: none;
+      margin-left: auto;
+    }
 
+    body {
+      margin: 0;
+      padding-top: 100px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-nav ul li a{
-    text-decoration: none;
-    color: #333;
-    font-size: 17px;
-    font-weight: 500;
-    transition: 0.3s;
-    color: #320089;
-    list-style: none;
-    margin-left: auto;
-}
+    .Home h1 {
+      text-align: center;
+      font-size: 100px;
+      font-family:
+        "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+        Arial, sans-serif;
+      font-weight: 700;
+    }
 
+    .About h1 {
+      text-align: center;
+      font-size: 50px;
+      font-family:
+        "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+        Arial, sans-serif;
+    }
 
-body{
-    margin: 0;
-    padding-top: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    .isiabout img {
+      width: 1500px;
+      align-items: center;
+      margin-left: 10px;
+    }
 
-.Home h1{
-    text-align: center;
-    font-size: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 700;
-}
+    .isiabout p {
+      text-align: center;
+      max-width: 1000px;
+      margin-left: 250px;
+    }
 
-.About h1{
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+    .kelompok {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 50px 0;
+      flex-wrap: wrap;
+    }
 
-.isiabout img{
-    width: 1500px;
-    align-items: center;
-    margin-left: 10px;
-}
+    .card {
+      width: 420px;
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
 
-.isiabout p{
-    text-align: center;
-    max-width: 1000px;
-    margin-left: 250px;
-}
+    .card h2 {
+      text-align: center;
+      color: #5b21b6;
+      margin-bottom: 20px;
+    }
 
+    .card p {
+      margin: auto;
+      text-align: justify;
+      line-height: 28px;
+    }
 
-.kelompok{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 50px 0;
-    flex-wrap: wrap;
-}
+    .card ol {
+      padding-left: 20px;
+      line-height: 30px;
+    }
 
-.card{
-    width: 420px;
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+    .Service {
+      padding: 80px 8%;
+      background: #f8f8f8;
+    }
 
-.card h2{
-    text-align: center;
-    color: #5b21b6;
-    margin-bottom: 20px;
-}
+    .Service h1 {
+      text-align: center;
+      font-size: 50px;
+    }
 
-.card p{
-    margin: auto;
-    text-align: justify;
-    line-height: 28px;
-}
+    .kelompok2 {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
 
-.card ol{
-    padding-left: 20px;
-    line-height: 30px;
-}
+    .Pricing {
+      padding: 80px 8%;
+    }
 
+    .Pricing h1 {
+      text-align: center;
+      font-size: 50px;
+    }
 
-.Service{
-    padding: 80px 8%;
-    background: #f8f8f8;
-}
+    .kelompok3 {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
 
-.Service h1{
-    text-align: center;
-    font-size: 50px;
-}
+    .harga {
+      width: 300px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 25px;
+      text-align: center;
+    }
 
-.kelompok2{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-}
+    .harga h2 {
+      color: #5b21b6;
+    }
 
+    .harga ol {
+      text-align: left;
+      line-height: 30px;
+    }
 
-.Pricing{
-    padding: 80px 8%;
-}
+    .harga p {
+      margin-top: 25px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #5b21b6;
+    }
 
-.Pricing h1{
-    text-align: center;
-    font-size: 50px;
-}
+    .Testimoni {
+      padding: 80px 8%;
+      background: #f8f8f8;
+    }
 
-.kelompok3{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-}
+    .Testimoni h1 {
+      text-align: center;
+      font-size: 50px;
+    }
 
-.harga{
-    width: 300px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,.1);
-    padding: 25px;
-    text-align: center;
-}
+    .testi {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
 
-.harga h2{
-    color: #5b21b6;
-}
+    .testi .card {
+      width: 320px;
+      text-align: center;
+    }
 
-.harga ol{
-    text-align: left;
-    line-height: 30px;
-}
+    .testi h3 {
+      color: #5b21b6;
+    }
 
-.harga p{
-    margin-top: 25px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #5b21b6;
-}
+    .Contact {
+      padding: 60px 8%;
+    }
 
+    .Contact h1 {
+      text-align: center;
+      font-size: 45px;
+    }
 
-.Testimoni{
-    padding: 80px 8%;
-    background: #f8f8f8;
-}
+    .judul {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-.Testimoni h1{
-    text-align: center;
-    font-size: 50px;
-}
+    .Contact h2 {
+      color: #5b21b6;
+      margin-top: 30px;
+    }
 
-.testi{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 50px;
-    flex-wrap: wrap;
-}
+    .Contact p {
+      line-height: 30px;
+    }
+  </style>
 
-.testi .card{
-    width: 320px;
-    text-align: center;
-}
-
-.testi h3{
-    color: #5b21b6;
-}
-
-
-.Contact{
-    padding: 60px 8%;
-}
-
-.Contact h1{
-    text-align: center;
-    font-size: 45px;
-}
-
-.judul{
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.Contact h2{
-    color: #5b21b6;
-    margin-top: 30px;
-}
-
-.Contact p{
-    line-height: 30px;
-}
-
-
-</style>
-
-<body>
-    
+  <body>
     <header>
+      <div class="logo">
+        <img src="image/logo tenten.png" alt="logo tenten" width="110px" />
 
-        <div class="logo">
+        <div class="logo-text">
+          <h1>Tenten.studio</h1>
+        </div>
 
-            <img src="image/logo tenten.png" alt="logo tenten" width="110px">
-
-            <div class="logo-text">
-
-                <h1>Tenten.studio</h1>
-
-            </div>
-
-            <nav>
-
-                <ul>
-
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Service">Service</a></li>
-                <li><a href="#Portofolio">Portofolio</a></li>
-                <li><a href="#Pricing">Pricing</a></li>
-                <li><a href="#Testimoni">Testimoni</a></li>
-                <li><a href="#Contact">Contact</a></li>
-
-                </ul>
-
-            </nav>
-        </div>    
-
+        <nav>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#Portofolio">Portofolio</a></li>
+            <li><a href="#Pricing">Pricing</a></li>
+            <li><a href="#Testimoni">Testimoni</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="Home" id="Home">
-        
-
-            <h1>TENTEN Crafting Digital Experiences.</h1>
-
+      <h1>TENTEN Crafting Digital Experiences.</h1>
     </section>
 
     <section class="About" id="About">
-
-
-        <div class="isiabout">
-
-             <div>
-
-                <p>
-                    Tenten is a digital company specializing in website development and graphic design. 
-                    We help businesses, SMEs, schools, and individuals establish a professional digital presence 
-                    through elegant design and modern technology.
-                </p>
-
-            </div>
-
-            <div>
-
-            <img src="image/image75.png" alt="Logo Tenten">
-
-            </div>
-
-            <div class="kelompok">
-
-                <div class="card">
-
-                    <h2>Visi</h2>
-
-                    <p>
-                        To become a creative digital company that delivers high-quality, 
-                        innovative website and graphic design solutions, 
-                        helping businesses and individuals thrive in the digital era.
-                    </p>
-
-                </div>
-
-                <div class="card">
-
-                    <h2>Misi</h2>
-
-                    <ol>
-                        <li>Providing high-quality and functional website solutions.</li>
-                        <li>Creating creative and memorable graphic designs.</li>
-                        <li>Prioritizing customer satisfaction through excellent service.</li>
-                        <li>Innovating in step with digital technology advancements.</li>
-                        <li>Serving as a trusted partner for businesses and individuals in building a digital identity.</li>
-                    </ol>
-
-                </div>
-            </div>
-            
+      <div class="isiabout">
+        <div>
+          <p>
+            Tenten is a digital company specializing in website development and
+            graphic design. We help businesses, SMEs, schools, and individuals
+            establish a professional digital presence through elegant design and
+            modern technology.
+          </p>
         </div>
 
+        <div>
+          <img src="image/image75.png" alt="Logo Tenten" />
+        </div>
+
+        <div class="kelompok">
+          <div class="card">
+            <h2>Visi</h2>
+
+            <p>
+              To become a creative digital company that delivers high-quality,
+              innovative website and graphic design solutions, helping
+              businesses and individuals thrive in the digital era.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2>Misi</h2>
+
+            <ol>
+              <li>Providing high-quality and functional website solutions.</li>
+              <li>Creating creative and memorable graphic designs.</li>
+              <li>
+                Prioritizing customer satisfaction through excellent service.
+              </li>
+              <li>Innovating in step with digital technology advancements.</li>
+              <li>
+                Serving as a trusted partner for businesses and individuals in
+                building a digital identity.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="Service" id="Service">
+      <h1>Service</h1>
 
-        <h1>Service</h1>
+      <div class="kelompok2">
+        <div class="card">
+          <h2>Website Development</h2>
 
-        <div class="kelompok2">
-
-            <div class="card">
-
-                <h2>Website Development</h2>
-
-                   <ol>
-                        <li>Company Profile </li>
-                        <li>Landing Page </li>
-                        <li>Online Shop </li>
-                        <li>Institution website </li>
-                        <li>Institution website </li>
-                    </ol>
-
-            </div>
-
-            <div class="card">
-
-                <h2>Graphic Design</h2>
-
-                    <ol>
-                        <li>Logo </li>
-                        <li>Branding </li>
-                        <li>Poster </li>
-                        <li>Brochure </li>
-                        <li>Feed Instagram </li>
-                        <li>Banner </li>
-                        <li>Product Packaging </li>
-
-                    </ol>
-
-            </div>
+          <ol>
+            <li>Company Profile</li>
+            <li>Landing Page</li>
+            <li>Online Shop</li>
+            <li>Institution website</li>
+            <li>Institution website</li>
+          </ol>
         </div>
 
+        <div class="card">
+          <h2>Graphic Design</h2>
 
+          <ol>
+            <li>Logo</li>
+            <li>Branding</li>
+            <li>Poster</li>
+            <li>Brochure</li>
+            <li>Feed Instagram</li>
+            <li>Banner</li>
+            <li>Product Packaging</li>
+          </ol>
+        </div>
+      </div>
     </section>
 
     <section class="Pricing" id="Pricing">
+      <h1>Pricing</h1>
 
-        <h1>Pricing</h1>
+      <div class="kelompok3">
+        <div class="kategori harga">
+          <h2>Basic</h2>
 
-        <div class="kelompok3">
-
-            <div class="kategori harga">
-
-                <h2>Basic</h2>
-
-                
-                    <ol>
-                        <li>Landing Page </li>
-                        <li>Responsive </li>
-                        <li>One Page </li>
-                        <p>Start From...</p>
-                       
-                    </ol>
-
-            </div>
-
-                
-            <div class="kategori harga">
-
-                <h2>Professional</h2>
-                
-                    <ol>
-                        <li>Company Profil </li>
-                        <li>5-10 Page </li>
-                        <li>Admin Panel </li>
-                        <p>Start From...</p>
-                    </ol>
-
-            </div>
-
-             <div class="kategori harga">
-
-                <h2>Premium</h2>
-                
-                    <ol>
-                        <li>Custom Website </li>
-                        <li>Database </li>
-                        <li>Dashboard </li>
-                        <li>Maintenance</li>
-                        <p>Start From...</p>
-
-                    </ol>
-
-            </div>
-
+          <ol>
+            <li>Landing Page</li>
+            <li>Responsive</li>
+            <li>One Page</li>
+            <p>Start From...</p>
+          </ol>
         </div>
 
+        <div class="kategori harga">
+          <h2>Professional</h2>
+
+          <ol>
+            <li>Company Profil</li>
+            <li>5-10 Page</li>
+            <li>Admin Panel</li>
+            <p>Start From...</p>
+          </ol>
+        </div>
+
+        <div class="kategori harga">
+          <h2>Premium</h2>
+
+          <ol>
+            <li>Custom Website</li>
+            <li>Database</li>
+            <li>Dashboard</li>
+            <li>Maintenance</li>
+            <p>Start From...</p>
+          </ol>
+        </div>
+      </div>
     </section>
 
-<section class="Testimoni" id="Testimoni">
+    <section class="Testimoni" id="Testimoni">
+      <h1>Testimoni Client</h1>
 
-    <h1>Testimoni Client</h1>
-
-    <div class="testi">
-
+      <div class="testi">
         <div class="card">
-            <h3>Elon Musk</h3>
-            <p>
-                "The website created is very professional and meets my business needs."
-            </p>
+          <h3>Elon Musk</h3>
+          <p>
+            "The website created is very professional and meets my business
+            needs."
+          </p>
         </div>
 
         <div class="card">
-            <h3>Robin Clinton</h3>
-            <p>
-                "Fast service, attractive design results, and excellent communication."
-            </p>
+          <h3>Robin Clinton</h3>
+          <p>
+            "Fast service, attractive design results, and excellent
+            communication."
+          </p>
         </div>
 
         <div class="card">
-            <h3>Budiono siregar</h3>
-            <p>
-               "Very satisfied with the branding and website created by Tenten."
-            </p>
+          <h3>Budiono siregar</h3>
+          <p>
+            "Very satisfied with the branding and website created by Tenten."
+          </p>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <section class="Contact" id="Contact">
+      <h1>Contact Person</h1>
 
-</section>
+      <p class="judul">Have a project in mind? Let's discuss together.</p>
 
+      <h2>Get In Touch</h2>
 
-<section class="Contact" id="Contact">
-
-    <h1>Contact Person</h1>
-
-    <p class="judul">
-        Have a project in mind? Let's discuss together.
-    </p>
-
-    <h2>Get In Touch</h2>
-
-    <a href="https://wa.me/6285648545426"><b>Phone :</b> +62 856-4854-5426</a>
-    <a href="mailto:hello@tenten.studio"><b>Email :</b> hello@tenten.studio</a>
-
-
-</section>
-    
-</body>
+      <a href="https://wa.me/6285648545426"><b>Phone :</b> +62 856-4854-7890</a>
+      <a href="mailto:hello@tenten.studio"
+        ><b>Email :</b> hello@tenten.studio</a
+      >
+    </section>
+  </body>
 </html>
