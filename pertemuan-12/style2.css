@@ -1,0 +1,22 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.image img{
+    width: 380px;
+}
+.warna{
+    font-size: 15px;
+    margin: 30px 0px;
+    color: #969696;
+}
+.teksimage{
+    display: flex;
+}
+.teksimage h3{
+    font-size: 15px;
+}
+.harga{
+    padding-left: 70px;
+}
