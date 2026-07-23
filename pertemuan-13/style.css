@@ -1,0 +1,100 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+}
+.logo img{
+    width: 50px;
+    padding: 10px 70px;
+    margin-top: 10px;
+}
+.teksnav nav ul{
+    display: flex;
+    gap: 20px;
+    padding-top: 28px;
+}
+.teksnav nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+button{
+    background-color: red;
+    margin-left: 800px;
+    margin-top: -10px;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.beranda{
+    padding-top: 120px;
+    text-align: center;
+}
+.beranda h1{
+    margin-bottom: 20px;
+}
+section{
+    display: flex;
+    margin-left: 60px;
+    gap: 10px;
+}
+.produk{
+    padding: 50px 20px;
+    background-color: rgb(254, 255, 255);
+    width: 420px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffffff;
+    margin-top: 150px;
+}
+.image img,.warna,.teksimage p{
+    margin-left: 18px;
+}
+.image img{
+    width: 380px;
+    margin-bottom: 20px;
+}
+
+.teksimage p{
+    max-width: 380px;
+}
+span{
+    background-color: red;
+}
+footer{
+    background-color: black;
+    padding: 20px 0px;
+    color: #ffffff;
+    margin-top: 150px;
+}
+.produk:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.beranda h1::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: red;
+    margin: 10px auto;
+}
+.produk:nth-child(2){
+    background-color: #f8f8f8;
+    border-color: red;
+}
+.teksnav nav ul li:first-child a{
+    font-weight: bold;
+}
+.teksnav nav ul li:last-child a{
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
