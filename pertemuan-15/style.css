@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(240, 240, 240);
+}
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 70px 1fr;
+  min-height: 100vh;
+  border: 200px solid rgb(black);
+}
+.header {
+  grid-column: 2;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  
+}
+.judul h1 {
+  font-size: 30px;
+}
+
+.pencarian {
+  margin-left: 600px;
+}
+
+.pencarian input {
+  width: 250px;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+}
+
+.image img {
+  width: 55px;
+  margin-left: 25px;
+  border-radius: 50%;
+}
+
+.teksimage {
+  margin-left: 10px;
+}
+
+.admin {
+  color: gray;
+  font-size: 14px;
+}
+.sidebar {
+  background-color: #012083ff;
+  grid-row: 1 / span 2;
+  width: 250px;
+}
+.logo h1 {
+    margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 32px;
+  margin-left: 10px;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 15px;
+  display: block;
+  border-radius: 10px;
+}
+.content {
+  display: grid;
+  margin: 0px 30px;  
+  gap: 25px;
+
+}
+.cardinduk {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin-top: 100px;
+  height: 200px;
+  justify-content: space-between;
+}
+.card {
+  height: 180px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+.judulcard {
+  color: gray;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.card h2 {
+  margin-top: 10px;
+  font-size: 34px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.card span {
+  color: #012083ff;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.bawah {
+  display: grid;
+  margin-bottom: 50px;
+  gap: 50px;
+  grid-template-columns: 800px 1fr;
+  min-height: 400px;
+  margin-top: 50px;
+}
+.grafik {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.grafik h2{
+    margin: 20px 0px 0px 20px;
+}
+.kanan {
+  display: grid;
+  grid-column: 2;
+  gap: 30px;
+}
+.profil {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+.aktivitas {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
