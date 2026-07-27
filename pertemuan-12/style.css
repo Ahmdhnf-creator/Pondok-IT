@@ -27,7 +27,9 @@ header{
 }
 .btnnav{
     padding-top: 20px;
-    padding-left: 800px;
+    padding-left: 720px;
+    display: flex;
+    
 }
 .btnnav button{
     width: 50px;
@@ -57,6 +59,13 @@ header{
 .Beranda img{
     width: 1520px;
     margin-bottom: 40px;
+}
+.Beranda p{
+
+}
+span{
+    background-color: darkred;
+    position: absolute;
 }
 .Produk{
     margin-bottom: 100px;

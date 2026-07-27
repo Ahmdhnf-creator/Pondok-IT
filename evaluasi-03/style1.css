@@ -1,0 +1,114 @@
+.schedule{
+    margin:100px 80px;
+}
+
+.judulschedule{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.judulschedule h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.judulschedule p{
+    color:#7d7d7d;
+}
+
+.schedule-card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px 35px;
+    margin-bottom:30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.schedule-info h2{
+    margin-bottom:10px;
+    color:#1f1f1f;
+}
+
+.schedule-info p{
+    color:#b30000;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+.schedule-info span{
+    color:#777;
+}
+
+.jam{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.jam button{
+    padding:12px 22px;
+    border:none;
+    border-radius:10px;
+    background:#b30000;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.jam button:hover{
+    background:#7d0000;
+    transform:translateY(-3px);
+}
+.pricelist{
+    padding:80px 120px;
+}
+
+.judulprice{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.judulprice h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.judulprice p{
+    color:#777;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+th{
+    background:#7b0000;
+    color:white;
+    padding:18px;
+    font-size:18px;
+}
+
+td{
+    padding:18px;
+    border-bottom:1px solid #eee;
+    text-align:center;
+}
+
+tr:hover{
+    background:#fafafa;
+}
+
+.note{
+    margin-top:20px;
+    color:#666;
+    font-size:14px;
+}

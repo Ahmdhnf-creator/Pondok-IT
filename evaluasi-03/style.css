@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+  padding: 10px 30px;
+}
+.logo img {
+  width: 200px;
+  margin-top: 5px;
+}
+.nav {
+  margin-top: 10px;
+}
+.nav ul {
+  display: flex;
+  gap: 40px;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+}
+.movies {
+}
+.judulhome {
+  text-align: center;
+  margin: 50px 0px;
+}
+.judulhome h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.judulhome p {
+  color: #8e8e8e;
+  max-width: 510px;
+  margin-left: 500px;
+}
+.overflowhome {
+  overflow: auto;
+  display: flex;
+}
+.imgmovies {
+}
+.film1 {
+}
+
+.imghome img {
+  width: 1600px;
+  display: block;
+}
+
+.btnhome button {
+  width: 100%;
+  padding: 15px 0;
+  background: darkred;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btnhome button {
+  width: 100%;
+  padding: 16px 0;
+  background: linear-gradient(135deg, #b30000, #7a0000);
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(122, 0, 0, 0.35);
+}
+
+.btnhome button:active {
+  transform: scale(0.99);
+}
+.imgmovies img {
+  width: 300px;
+  border-radius: 15px;
+}
+.Movies,
+.Coomingsoon {
+  margin: 50px 0px 20px 100px;
+}
+.Movies h1,
+.Coomingsoon h1 {
+  margin-bottom: 50px;
+}
+.tksmovies p {
+  margin: 10px;
+}
+.indukimgtks,
+.indukimgtks2 {
+  display: flex;
+  gap: 40px;
+}
+.indukimgtks2 {
+  margin-top: 20px;
+}
+.Schedule {
+  margin: 50px 0px 20px 100px;
+  padding-bottom: 200px;
+}
+.navsch{
+  margin-left: 500px;
+}
+.navsch ul{
+  display: flex;
+  gap: 10px;
+}
+.navsch ul li{
+  list-style: none;
+}
+.navsch ul li a{
+  text-decoration: none;
+  color: #8e8e8e;
+}
+.overflowsch{
+  height: 400px;
+  overflow: auto;
+}
+.tgl{
+  margin-left: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.jdlsch {
+  text-align: center;
+  margin-right: 55px;
+}
+.jdlsch h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+.jdlsch p {
+  color: #8e8e8e;
+  margin-bottom: 30px;
+}
+.cardsch {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 1330px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 20px 30px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.tks2,.tks3{
+  font-size: 15px;
+}
+.tks1{
+  font-size: 25px;
+}
+.tks2{
+  margin: 10px 0px 0px 0px;
+  color: darkred;
+}
+.tksschedule {
+  
+}
+.btnschedule {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+.btnschedule button {
+  width: 90px;
+  height: 45px;
+  border: none;
+  background-color: darkred;
+  color: white;
+  border-radius: 15px;
+}
+.footer{
+  background-color: darkred;
+  padding: 50px 20px;
+}

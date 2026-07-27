@@ -9,7 +9,8 @@
   width: 700px;
   padding: 20px;
   padding-right: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  border: 2px solid #8b0000;
+  background-color: #ffffff;
   border-radius: 15px;
   box-shadow:
     0 10px 20px rgba(0, 0, 0, 0.08),
